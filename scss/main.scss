@@ -1,60 +1,60 @@
 @import './materialize.scss';
 
-// Vars
+// variables
 $header-bg: url(../img/pattern.png);
 $header-height: 300px;
 
 // Text Color Function
-@function set-text-color($color) {
+@function set-text-color($color){
     @if(lightness($color) > 50){
-       @return #000;
-    } @else {
-        @return #fff;
+        @return #000000;
+    } @else{
+        @return white;
     }
 }
 
-.main-header {
+.main-header{
     background: $header-bg;
-    color: #fff;
+    color: #ffffff;
     height: $header-height;
     margin-bottom: 30px;
 
-    h1 {
+    h1{
         margin: 0;
         padding-top: 30px;
     }
 }
 
-body {
+body{
     background: $primary-color;
     color: set-text-color($primary-color);
 }
 
-.img-content {
+.img-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 300px;
 }
 
-.card-content {
+.card-content{
     color: $primary-color;
 }
 
-.page-footer {
+.page-footer{
     background: $secondary-color;
 
-    .footer-copyright {
+    .footer-copyright{
         background: $secondary-color-light;
     }
 }
 
-.modal {
+.modal{
     color: #333;
 }
 
 .row1,
 .row2,
-.row3 {
+.row3{
     opacity: 0;
 }
